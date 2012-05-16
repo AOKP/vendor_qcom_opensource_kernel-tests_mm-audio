@@ -7,7 +7,11 @@ LOCAL_MODULE       := HiFi
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -15,7 +19,11 @@ LOCAL_MODULE       := FM_Digital_Radio
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_Digital_Radio
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_Digital_Radio
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -23,7 +31,11 @@ LOCAL_MODULE       := HiFi_Rec
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi_Rec
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi_Rec
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -31,7 +43,11 @@ LOCAL_MODULE       := Voice_Call_IP
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/Voice_Call_IP
+else
 LOCAL_SRC_FILES    := snd_soc_msm/Voice_Call_IP
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -39,7 +55,11 @@ LOCAL_MODULE       := Voice_Call
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/Voice_Call
+else
 LOCAL_SRC_FILES    := snd_soc_msm/Voice_Call
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -47,7 +67,11 @@ LOCAL_MODULE       := FM_REC
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_REC
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_REC
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -55,7 +79,11 @@ LOCAL_MODULE       := HiFi_Low_Power
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi_Low_Power
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi_Low_Power
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -63,7 +91,11 @@ LOCAL_MODULE       := FM_A2DP_REC
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_A2DP_REC
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_A2DP_REC
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -71,7 +103,11 @@ LOCAL_MODULE       := DL_REC
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/DL_REC
+else
 LOCAL_SRC_FILES    := snd_soc_msm/DL_REC
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -79,7 +115,11 @@ LOCAL_MODULE       := UL_DL_REC
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/UL_DL_REC
+else
 LOCAL_SRC_FILES    := snd_soc_msm/UL_DL_REC
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -87,7 +127,11 @@ LOCAL_MODULE       := snd_soc_msm
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/snd_soc_msm
+else
 LOCAL_SRC_FILES    := snd_soc_msm/snd_soc_msm
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -95,7 +139,11 @@ LOCAL_MODULE       := HiFi_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -103,7 +151,11 @@ LOCAL_MODULE       := FM_Digital_Radio_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_Digital_Radio_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_Digital_Radio_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -111,7 +163,11 @@ LOCAL_MODULE       := HiFi_Rec_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi_Rec_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi_Rec_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -119,7 +175,11 @@ LOCAL_MODULE       := Voice_Call_IP_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/Voice_Call_IP_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/Voice_Call_IP_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -127,7 +187,11 @@ LOCAL_MODULE       := Voice_Call_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/Voice_Call_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/Voice_Call_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -135,7 +199,11 @@ LOCAL_MODULE       := FM_REC_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_REC_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_REC_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -143,7 +211,11 @@ LOCAL_MODULE       := HiFi_Low_Power_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/HiFi_Low_Power_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/HiFi_Low_Power_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -151,7 +223,11 @@ LOCAL_MODULE       := FM_A2DP_REC_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/FM_A2DP_REC_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/FM_A2DP_REC_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -159,7 +235,11 @@ LOCAL_MODULE       := DL_REC_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/DL_REC_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/DL_REC_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -167,7 +247,11 @@ LOCAL_MODULE       := UL_DL_REC_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/UL_DL_REC_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/UL_DL_REC_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -175,7 +259,11 @@ LOCAL_MODULE       := snd_soc_msm_2x
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/snd_soc_msm
+ifeq ($(BOARD_USES_HTC_MSM_SND),true)
+LOCAL_SRC_FILES    := htc_snd_soc_msm/snd_soc_msm_2x
+else
 LOCAL_SRC_FILES    := snd_soc_msm/snd_soc_msm_2x
+endif
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
