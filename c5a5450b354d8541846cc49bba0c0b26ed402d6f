@@ -1,0 +1,8 @@
+Change-Id: Ic5a5450b354d8541846cc49bba0c0b26ed402d6f
+Code-Review+2: Jacob Bell <fzservers@gmail.com>
+Verified+1: Jacob Bell <fzservers@gmail.com>
+Submitted-by: Jacob Bell <fzservers@gmail.com>
+Submitted-at: Thu, 17 May 2012 06:56:10 -0500
+Reviewed-on: http://gerrit.sudoservers.com/859
+Project: AOKP/vendor_qcom_opensource_kernel-tests_mm-audio
+Branch: refs/heads/ics
